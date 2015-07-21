@@ -7,13 +7,12 @@
 
 namespace Tormit\LaravelTranslationsCollector\Console;
 
-use App\Helper\Transliterator;
-use App\Helper\Util;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
+use Tormit\Helper\Transliterator;
+use Tormit\Helper\Util;
 
 class TranslationCollect extends Command
 {
