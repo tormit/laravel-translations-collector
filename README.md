@@ -1,1 +1,1 @@
-# laravel-translations-collector
+# Laravel translations collector

@@ -1,0 +1,22 @@
+{
+  "name": "tormit/laravel-translations-collector",
+  "description": "Laravel translations collector. Inspired by symfony 1.1 i18n:extract.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tormi Talv",
+      "email": "tormi.talv@ambientia.ee"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "tormit/helper": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tormit\\LaravelTranslationsCollector": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
