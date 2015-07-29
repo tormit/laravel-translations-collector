@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Tormit\\LaravelTranslationsCollector": "src/"
+      "Tormit\\LaravelTranslationsCollector\\": "src/"
     }
   },
   "minimum-stability": "dev",
