@@ -58,12 +58,8 @@ PAT;
     {
         $this->verbose = $this->input->getOption('verbose');
 
-        if ($this->input->getOption('test')) {
-            $this->scanDirectory(base_path('tests' . DIRECTORY_SEPARATOR . 'translations'));
-        } else {
-            $this->scanDirectory(app_path());
-            $this->scanDirectory(base_path('resources' . DIRECTORY_SEPARATOR . 'views'));
-        }
+        $this->scanDirectory(app_path());
+        $this->scanDirectory(base_path('resources' . DIRECTORY_SEPARATOR . 'views'));
     }
 
     /**
@@ -241,7 +237,6 @@ ARRAY;
     protected function getOptions()
     {
         return [
-            ['test', null, InputOption::VALUE_NONE, 'Run collector on test files.', null],
             ['location', null, InputOption::VALUE_NONE, 'Add translation location into dump as comment for each line.', null],
             ['append', null, InputOption::VALUE_NONE, 'Add missing translations for current translation files.', null],
         ];
